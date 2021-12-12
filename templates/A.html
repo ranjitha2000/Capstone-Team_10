@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Documentation
+    </title>
+    <link rel="icon" href="{{url_for('static', filename='Capture3.jpg')}}" type="image/icon type">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+        i {
+            color: green;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .text-center {
+            margin: auto;
+            text-align: center;
+        }
+        
+        hr {
+            border: 0;
+            border-top: 2px solid green;
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{url_for('index')}}">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('Documentation') }}"> Documentation <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('aboutus') }}">Developers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div>
+            <img src="{{url_for('static', filename='Capture.jpg')}}" style="width: 100%;">
+        </div>
+    </div>
+    <div>
+        <div class="container" style="margin-top: 5%;">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card" style="height:200px;">
+                        <img class="card-img-top" src="" alt="">
+
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-book" aria-hidden="true"></i> &nbsp;Introduction</h5>
+                            <p class="card-text">
+                                This website allows you to check whether any URL is a legitimate URL. The website gives us results extremely quickly and is relible.
+                            </p>
+
+                            <div class="text-center">
+                                <a href="#cardopen" class="btn btn-outline-success btn-sm text-center">
+                            Know More
+                        </a></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card" style="height:200px;">
+                        <img class="card-img-top" src="" alt="">
+
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;Utilities</h5>
+                            <p class="card-text">
+                                This is the first version of the project. All utilities and files related to the project are available on a private GitHub Repository!
+                            </p>
+
+                            <div class="text-center">
+                                <a href="#cardopen2" class="btn btn-outline-success btn-sm text-center">
+                            Know More
+                        </a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container" style="margin-top: 2%;">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card" style="height:200px;">
+                        <img class="card-img-top" src="" alt="">
+
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-address-card" aria-hidden="true"></i> &nbsp;About Us</h5>
+                            <p class="card-text">
+                                The website and all work related to it has been developed by Team 10, PES University, EC Campus, Batch 2022, under the guidance of Prof. Bharathi R.
+                            </p>
+                            <div class="text-center">
+                                <a href="{{url_for('aboutus')}}" class="btn btn-outline-success btn-sm text-center">
+                            Know More
+                        </a></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card" style="height:200px;">
+                        <img class="card-img-top" src="" alt="">
+
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-code" aria-hidden="true"></i> &nbsp;Models</h5>
+                            <p class="card-text">
+                                A deep learing model has been used to perform the predictive analysis on the website. Any or all data regarding the model is subject to copyright.
+                            </p>
+
+                            <div class="text-center">
+                                <a href="#cardopen4" class="btn btn-outline-success btn-sm text-center">
+                            Know More
+                        </a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 2%;">
+            <div class="row">
+                <div class="col-lg-6 mb-4" style="margin: 0 auto;">
+                    <div class="card" style="height:200px;">
+                        <img class="card-img-top" src="" alt="">
+
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-desktop" aria-hidden="true"></i> &nbsp;Web</h5>
+                            <p class="card-text">
+                                To test any URL, Visit our main page!
+                            </p>
+
+                            <div class="text-center">
+                                <a href="{{url_for('index')}}" class="btn btn-outline-success btn-sm text-center"> Click here!</a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="margin-top: 5%; text-align: justify;">
+        <div class="container" id="cardopen" style="margin-bottom: 3%;">
+            <h3>Introduction</h3>
+            This is a website where you can check the nature of our any website. The name verifyURL is sel-explanatory and hence qualifies as the title of our website.<b> Through this website we aim to detect phishing websites in real time!</b> The quick advancements in
+            the worldwide networking and communication technologies, has transferred our day by day life exercises on to cyberspace. This change has led to an open, mysterious and uncontrolled framework of the Internet which empowers an astounding stage
+            for cyberattacks, which presents genuine security weaknesses for networks as well as for the standard computer clients in any event, even for the experienced ones. One among the cyberattacks is the phishing attacks, which is one of the common
+            social engineering techniques used by phishers to gain sensitive information such as username, passwords, credit card or any other sensitive data from the end users.
+        </div>
+        <div class="container">
+            <hr>
+        </div>
+        <div class="container" id="cardopen2" style="margin-bottom: 3%;">
+            <h3>Utilities</h3>
+            <b>The technologies used :</b>
+            <br><br>
+            <b>Python (v 3.8):</b> Python (v 3.8): To write a readable and concise code which is understandable by humans. Python libraries like 
+            <ul>
+                <li>pandas==1.0.5</li> 
+                <li>numpy==1.19.5</li>
+                <li>keras==2.4.3</li>
+                <li>tensorflow==2.4.1</li>
+                <li>flask==1.1.2</li>
+                <li>re==2.2.1</li>
+                <li>nltk==3.5</li>
+                <li>requests==2.24.0</li>
+            </ul>
+            <br>
+            <b>Flask Web Framework :</b> used to design the web application for our model and deploy it on the world wide web.
+            <br><br>
+            <b>HTML5:</b> is a programming language to write the web application page for our system and give structure to the website and to add the contents.
+            <br><br>
+            <b>Bootstrap 4:</b> Bootstrap is a CSS framework directed that helped us with the front-end web development of this website. It contains CSS- and JavaScript-based design templates.
+            <br><br>
+            <b>CSS:</b> to beautify the webpage and to make it look attractive and eye-catching to the user.
+        </div>
+        <div class="container">
+            <hr>
+        </div>
+        <div class="container" id="cardopen4" style="margin-bottom: 3%;">
+            <h3>Models</h3>
+            <h4>DNN-CNN model</h4>
+            A URL semantic-based phishing attack detection is performed using Deep Learning algorithms and Natural Language Processing techniques. <b>A hybrid model is proposed which is constructed by combining the features of a DNN model and CNN model.</b>Two types of features are passed into the model, which are hand-crafted features extracted from the URL and character level features. The features extracted from the URLs are based on the usual differences found between phishing and legitimate URLs. The models are trained using a dataset containing 100000 instances which are split in an 70:30  ratio for training and testing.
+The URL syntax based phishing attack detection is a simple and quick way of detecting phishing URLs as it classifies the URL based on the syntax of the URL. For performing such classifications, deep learning algorithms are the best as they are good at understanding complex features from the input data. In order to classify phishing URL using the syntax of the URL, we can train deep learning models in two ways, one by extracting the features from the URL, based on the common pattern or syntactical differences in the legitimate and phishing URLs and the second way is to encode these URLs and then train the model by passing the entire encoded URL. But as both of them are used for classifying the same target labels, it is more efficient when both can be done using the same model.
+So, the proposed model is designed in such a way that it can be trained by passing both the extracted features and the respective encoded URL as input. This model is built by using two input layers, one for the continuous data which are the values of the extracted features of shape (22,) and the other for the integer encoded URLs which are padded sequences with max length of 1000. The second input layer is followed by an embedding layer with embedded weights to convert the integer encodings of the URLs into one hot encodings. These encodings are then passed through convolution layer, max pooling layer, convolution layer and flatten layers in the sequential order respectively. By doing this, the convolution layers create feature maps, max pooling layer helps in creating pooled feature maps and the flatten layer reduces the size of the data from a matrix to column. This data is then passed through a dense fully connected layer. Parallelly, the first input layer is also passed through a dense fully connected layer. This is done so as to obtain the same shaped tensor outputs which can be passed as an input into the concatenation layers. The output of this layer is then passed through a set of six dense fully connected layers to obtain high accuracy and lastly it is passed through a dense sigmoid output layer for getting the classification results. This model is compiled using binary cross entropy and Adam as loss function and optimizer respectively.
+            <br><br>
+            <br>
+            The dataset used was made by our developer team by collecting lists of URLs through various resources present on the internet.
+
+        </div>
+
+    </div>
+    <div class="container">
+            <hr>
+    </div>
+    <div class="footer " style="text-align: center; font-size: 100%; ">
+        <p> © Copyright</p>
+        <p> Website developed and maintained by Team 10, Capstone project , Batch 2022</p>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

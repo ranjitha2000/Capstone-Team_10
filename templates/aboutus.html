@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <link rel="icon" href="{{url_for('static', filename='Capture3.jpg')}}" type="image/icon type">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- MOnoton style -->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <!-- El+Messiri style -->
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fontawesome 4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script type="text/javascript">
+        $('body').scrollspy({
+            target: '#navbar-example'
+        })
+    </script>-->
+    <title>About Us!</title>
+    <style type="text/css">
+        .photos{
+            border-radius: 55%;
+            border:2px solid #000000;
+        }
+        body{
+            font-family: 'El Messiri', sans-serif;
+        }
+        .card{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            border:0px;
+        }
+        .list-group-item:hover{
+            background-color: #c4ecf5;
+        }
+        
+        #colorful{
+            border: 10px solid transparent;
+            padding: 0px;
+            border-image: url({{url_for('static', filename='bg1.jpg')}}) 30 stretch;
+        }
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('Documentation') }}"> Documentation <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('aboutus') }}">Developers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 style="text-align:center; margin-top: 4%; font-family: 'Monoton', cursive;">Meet &nbsp; our &nbsp; Developers !</h1>
+        <div id="list-example " class="list-group" style="float: left; width: 30%; margin-top: 3%; position: fixed; ">
+            <div>
+                <!--<button type="button" class="btn btn-outline-primary" style="margin-left: 5%;">Click on any one of the names in the list to view them!</button>-->
+                <div class="alert alert-primary" role="alert">
+                    Click on any one of the names in the list to view them!
+                </div>
+            </div>
+            <br>
+            <!--style="border: 2px solid black; border-radius: 5px;"-->
+            <div id ="colorful">
+                <a class="list-group-item list-group-item-action " href="#list-item-1"><i style="color:rgba(0,123,255,0.7);" class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Alisha Maini</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2"><i style="color:rgba(0,123,255,0.7);" class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Navan Kakwani</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3"><i style="color:rgba(0,123,255,0.7);" class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Ranjitha B</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4"><i style="color:rgba(0,123,255,0.7);" class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Shreya MK</a>
+            </div>
+
+            <div class="footer " style="text-align: center; font-size: 100%; margin-top: 5%; ">
+                <p> © Copyright</p>
+                <p> Website developed and maintained by Team 10, Capstone project , Batch 2022</p>
+
+    </div>
+        </div>
+        <div style="float: left; width: 10%; border: 2px solid white;">
+        </div>
+        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="float: left; width: 60%; margin-top: 2%; margin-left: 50%;">
+            <h4 id="list-item-1"></h4>
+            <p>
+                <div class="card text-center border-dark allcard" style="width: 45rem;">
+                    <img class="card-img-top photos" src="{{url_for('static', filename='alisha.jpg')}}" alt="Card image cap" style="height: 250px; width: 200px; align-self: center; margin-top: 2%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Alisha Maini</h5>
+                        <p class="card-text">Hi, My name is Alisha Maini, and I am always energetic and eager to learn new skills.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">PES2201800031</li>
+                        <li class="list-group-item">PES University, 6th Semester</li>
+                        <li class="list-group-item">You Grow as you learn.</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://www.linkedin.com/in/alisha-maini-521a81167/" class="card-link"><i class="fa fa-linkedin-square" aria-hidden="true"></i> View my LinkedIn profile here!</a>
+                    </div>
+                </div>
+                <br>
+                <br><br>
+            </p>
+            <h4 id="list-item-2"></h4>
+            <p>
+                <div class="card text-center border-dark allcard" style="width: 45rem;">
+                    <img class="card-img-top photos" src="{{ url_for ('static', filename = 'navan.jpg') }}" alt="Card image cap" style="height: 250px; width: 200px; align-self: center; margin-top: 5%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Navan Kakwani</h5>
+                        <p class="card-text">Hi, My name is Navan Kakwani. I am a B.Tech student who wants to pursue further studies in the field of Deep Learning and AI! </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">PES2201800080</li>
+                        <li class="list-group-item">PES University, 6th Semester</li>
+                        <li class="list-group-item">Always follow your passion!</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://www.linkedin.com/in/navan-kakwani-7a47b31a3/" class="card-link"><i class="fa fa-linkedin-square" aria-hidden="true"></i> View my LinkedIn profile here!</a>
+                    </div>
+                </div>
+            </p>
+            <br>
+            <br><br>
+            <h4 id="list-item-3"></h4>
+            <p>
+                <div class="card text-center border-dark allcard" style="width: 45rem;">
+                    <img class="card-img-top photos" src="{{ url_for ('static', filename = 'ranjitha.jpg') }}" alt="Card image cap" style="height: 250px; width: 200px; align-self: center; margin-top: 5%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Ranjitha B</h5>
+                        <p class="card-text">Hi, My name is Ranjitha B, and I am a pyhton developer with keen interest in the field of Machine Learning.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">PES2201800376</li>
+                        <li class="list-group-item">PES University, 6th Semester</li>
+                        <li class="list-group-item">Do what you love,enjoy what you do!</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://www.linkedin.com/in/ranjitha-b-80a56317b/" class="card-link"><i class="fa fa-linkedin-square" aria-hidden="true"></i> View my LinkedIn profile here!</a>
+                    </div>
+                </div>
+            </p>
+            <br>
+            <br><br>
+            <h4 id="list-item-4"></h4>
+            <p>
+                <div class="card text-center border-dark allcard" style="width: 45rem;">
+                    <img class="card-img-top photos" src="{{ url_for ('static', filename = 'shreya.jpg') }}" alt="Card image cap" style="height: 250px; width: 205px; align-self: center; margin-top:2%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Shreya MK</h5>I am Shreya MK, and I want to help the community by developing products that can be used by everyone! </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">PES2201800679</li>
+                        <li class="list-group-item">PES University, 6th Semester</li>
+                        <li class="list-group-item">Hard work is the only way to succeed!</li>
+                    </ul>
+                    <div class="card-body">
+                        <a target="_blank" href="https://www.linkedin.com/in/shreya-m-k-2b8676215/" class="card-link"><i class="fa fa-linkedin-square" aria-hidden="true"></i> View my LinkedIn profile here!</a>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
